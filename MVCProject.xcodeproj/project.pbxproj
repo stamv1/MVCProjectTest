@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		F00803E51EB58B0200C8879C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00803E41EB58B0200C8879C /* AppDelegate.swift */; };
-		F00803E71EB58B0200C8879C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00803E61EB58B0200C8879C /* ViewController.swift */; };
+		F00803E71EB58B0200C8879C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00803E61EB58B0200C8879C /* MainVC.swift */; };
 		F00803EA1EB58B0200C8879C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00803E81EB58B0200C8879C /* Main.storyboard */; };
 		F00803ED1EB58B0200C8879C /* MVCProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F00803EB1EB58B0200C8879C /* MVCProject.xcdatamodeld */; };
 		F00803EF1EB58B0200C8879C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00803EE1EB58B0200C8879C /* Assets.xcassets */; };
 		F00803F21EB58B0200C8879C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00803F01EB58B0200C8879C /* LaunchScreen.storyboard */; };
 		F00803FD1EB58B0300C8879C /* MVCProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00803FC1EB58B0300C8879C /* MVCProjectTests.swift */; };
 		F00804081EB58B0300C8879C /* MVCProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00804071EB58B0300C8879C /* MVCProjectUITests.swift */; };
+		F00804191EB59D6100C8879C /* ShowVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00804181EB59D6100C8879C /* ShowVideoVC.swift */; };
+		F008041B1EB72CAE00C8879C /* NickCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008041A1EB72CAE00C8879C /* NickCellTableViewCell.swift */; };
+		F008041D1EB7300400C8879C /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008041C1EB7300400C8879C /* Video.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,7 @@
 /* Begin PBXFileReference section */
 		F00803E11EB58B0200C8879C /* MVCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F00803E41EB58B0200C8879C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F00803E61EB58B0200C8879C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F00803E61EB58B0200C8879C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		F00803E91EB58B0200C8879C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F00803EC1EB58B0200C8879C /* MVCProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVCProject.xcdatamodel; sourceTree = "<group>"; };
 		F00803EE1EB58B0200C8879C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		F00804031EB58B0300C8879C /* MVCProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVCProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F00804071EB58B0300C8879C /* MVCProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCProjectUITests.swift; sourceTree = "<group>"; };
 		F00804091EB58B0300C8879C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F00804181EB59D6100C8879C /* ShowVideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowVideoVC.swift; sourceTree = "<group>"; };
+		F008041A1EB72CAE00C8879C /* NickCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NickCellTableViewCell.swift; sourceTree = "<group>"; };
+		F008041C1EB7300400C8879C /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,11 @@
 		F00803E31EB58B0200C8879C /* MVCProject */ = {
 			isa = PBXGroup;
 			children = (
-				F00803E41EB58B0200C8879C /* AppDelegate.swift */,
-				F00803E61EB58B0200C8879C /* ViewController.swift */,
+				F00804171EB58E6100C8879C /* Model */,
+				F00804161EB58D7000C8879C /* View */,
+				F00804151EB58D2F00C8879C /* Controller */,
 				F00803E81EB58B0200C8879C /* Main.storyboard */,
+				F00803E41EB58B0200C8879C /* AppDelegate.swift */,
 				F00803EE1EB58B0200C8879C /* Assets.xcassets */,
 				F00803F01EB58B0200C8879C /* LaunchScreen.storyboard */,
 				F00803F31EB58B0200C8879C /* Info.plist */,
@@ -126,6 +134,31 @@
 				F00804091EB58B0300C8879C /* Info.plist */,
 			);
 			path = MVCProjectUITests;
+			sourceTree = "<group>";
+		};
+		F00804151EB58D2F00C8879C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F00803E61EB58B0200C8879C /* MainVC.swift */,
+				F00804181EB59D6100C8879C /* ShowVideoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F00804161EB58D7000C8879C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F008041A1EB72CAE00C8879C /* NickCellTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F00804171EB58E6100C8879C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F008041C1EB7300400C8879C /* Video.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,15 +229,18 @@
 				TargetAttributes = {
 					F00803E01EB58B0200C8879C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PRNXVJNG55;
 						ProvisioningStyle = Automatic;
 					};
 					F00803F71EB58B0300C8879C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PRNXVJNG55;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F00803E01EB58B0200C8879C;
 					};
 					F00804021EB58B0300C8879C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PRNXVJNG55;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F00803E01EB58B0200C8879C;
 					};
@@ -263,7 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F00803ED1EB58B0200C8879C /* MVCProject.xcdatamodeld in Sources */,
-				F00803E71EB58B0200C8879C /* ViewController.swift in Sources */,
+				F008041D1EB7300400C8879C /* Video.swift in Sources */,
+				F008041B1EB72CAE00C8879C /* NickCellTableViewCell.swift in Sources */,
+				F00804191EB59D6100C8879C /* ShowVideoVC.swift in Sources */,
+				F00803E71EB58B0200C8879C /* MainVC.swift in Sources */,
 				F00803E51EB58B0200C8879C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +453,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PRNXVJNG55;
 				INFOPLIST_FILE = MVCProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Stam.MVCProject;
@@ -426,6 +467,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PRNXVJNG55;
 				INFOPLIST_FILE = MVCProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Stam.MVCProject;
@@ -439,6 +482,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PRNXVJNG55;
 				INFOPLIST_FILE = MVCProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Stam.MVCProjectTests;
@@ -453,6 +497,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PRNXVJNG55;
 				INFOPLIST_FILE = MVCProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Stam.MVCProjectTests;
@@ -466,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PRNXVJNG55;
 				INFOPLIST_FILE = MVCProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Stam.MVCProjectUITests;
@@ -479,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PRNXVJNG55;
 				INFOPLIST_FILE = MVCProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Stam.MVCProjectUITests;
@@ -507,6 +554,7 @@
 				F008040E1EB58B0300C8879C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F008040F1EB58B0300C8879C /* Build configuration list for PBXNativeTarget "MVCProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +563,7 @@
 				F00804111EB58B0300C8879C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F00804121EB58B0300C8879C /* Build configuration list for PBXNativeTarget "MVCProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +572,7 @@
 				F00804141EB58B0300C8879C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
